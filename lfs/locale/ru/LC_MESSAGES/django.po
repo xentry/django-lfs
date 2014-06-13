@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LFS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-13 23:19+0400\n"
+"POT-Creation-Date: 2014-06-13 23:38+0400\n"
 "PO-Revision-Date: 2014-06-13 23:25+0400\n"
 "Last-Translator: axentry@gmail.com <axentry@gmail.com>\n"
 "Language-Team: Kai Diefenbach <kai.diefenbach@iqpp.de>\n"
@@ -1241,8 +1241,8 @@ msgid "Is not"
 msgstr "Не является"
 
 #: .\customer\forms.py:29 .\customer\forms.py:71
-#: .\manage\product\product.py:99 .\manage\product\product.py:131
-#: .\manage\product\product.py:159
+#: .\manage\product\product.py:100 .\manage\product\product.py:132
+#: .\manage\product\product.py:160
 msgid "This field is required."
 msgstr "Поле обязательно к заполнению."
 
@@ -1408,8 +1408,8 @@ msgstr "Действие сохранено."
 
 #: .\manage\actions\views.py:100 .\manage\categories\category.py:125
 #: .\manage\categories\view.py:48 .\manage\manufacturers\views.py:99
-#: .\manage\manufacturers\views.py:298 .\manage\product\product.py:227
-#: .\manage\product\product.py:446 .\manage\seo\views.py:95
+#: .\manage\manufacturers\views.py:298 .\manage\product\product.py:228
+#: .\manage\product\product.py:447 .\manage\seo\views.py:95
 #: .\manage\shipping_methods\views.py:336 .\manage\views\payment.py:346
 #: .\manage\views\shop.py:132 .\manage\views\shop.py:155
 #: .\manage\views\shop.py:181
@@ -1602,31 +1602,31 @@ msgstr "Картинки обновлены."
 msgid "Active images has been updated."
 msgstr "Активные картинки обновлены."
 
-#: .\manage\product\product.py:225
+#: .\manage\product\product.py:226
 msgid "Product stock data has been saved."
 msgstr "Наличие товара сохранено."
 
-#: .\manage\product\product.py:395
+#: .\manage\product\product.py:396
 msgid "Sub type has been changed."
 msgstr "Подтип изменен."
 
-#: .\manage\product\product.py:444
+#: .\manage\product\product.py:445
 msgid "Product data has been saved."
 msgstr "Данные товара сохранены."
 
-#: .\manage\product\product.py:502
+#: .\manage\product\product.py:503
 msgid "Product filters have been reset"
 msgstr "Фильтры товара сброшены."
 
-#: .\manage\product\product.py:529
+#: .\manage\product\product.py:530
 msgid "Products have been deleted."
 msgstr "Товары удалены."
 
-#: .\manage\product\product.py:572
+#: .\manage\product\product.py:573
 msgid "Products have been saved"
 msgstr "Товары сохранены."
 
-#: .\manage\product\product.py:650
+#: .\manage\product\product.py:651
 msgid "Product filters have been set"
 msgstr "Фильтры товара сохранены."
 
@@ -1866,11 +1866,11 @@ msgstr "Портлет обновлен."
 msgid "Portlet has been added."
 msgstr "Портлет добавлен."
 
-#: .\manage\views\lfs_portlets.py:141
+#: .\manage\views\lfs_portlets.py:145
 msgid "Portlet has been deleted."
 msgstr "Портлет удален."
 
-#: .\manage\views\lfs_portlets.py:169
+#: .\manage\views\lfs_portlets.py:173
 msgid "Portlet has been saved."
 msgstr "Портлет сохранен."
 
