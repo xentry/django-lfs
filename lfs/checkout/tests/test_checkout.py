@@ -19,9 +19,6 @@ from lfs.payment.settings import BY_INVOICE
 from lfs.shipping.models import ShippingMethod
 from lfs.tax.models import Tax
 
-# 3rd party imports
-from postal.library import form_factory
-
 class CheckoutTestCase(TestCase):
     """
     """

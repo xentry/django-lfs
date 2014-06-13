@@ -114,6 +114,15 @@ def sorting(context):
     return {"current": sorting, "sort_options": sort_options}
 
 
+@register.inclusion_tag('lfs/catalog/items_per_page.html', takes_context=True)
+def items_per_page(context):
+    """
+    """
+    request = context.get("request")
+    count = request.session.get("items_per_page")
+    return {"current": count}    
+
+
 @register.inclusion_tag('lfs/catalog/breadcrumbs.html', takes_context=True)
 def breadcrumbs(context, obj, current_page=''):
     """

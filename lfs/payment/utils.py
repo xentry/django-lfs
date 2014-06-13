@@ -1,5 +1,6 @@
 # django imports
 from django.core.urlresolvers import reverse
+from django.shortcuts import get_object_or_404
 
 # lfs imports
 from lfs.core.signals import order_submitted
@@ -58,6 +59,17 @@ def get_selected_payment_method(request):
         return customer.selected_payment_method
     else:
         return get_default_payment_method(request)
+
+
+def get_payment_method(request, payment_method_id=None):
+    """
+    Returns the selected payment method by id for given request.
+    Or default payment method if payment_method_id is None
+    """
+    if payment_method_id:
+        return get_object_or_404(PaymentMethod, pk=payment_method_id)
+
+    return get_default_payment_method(request)
 
 
 def get_payment_costs(request, payment_method):

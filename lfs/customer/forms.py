@@ -29,20 +29,21 @@ class BankAccountForm(forms.ModelForm):
         msg = _(u"This field is required.")
 
         payment_method_id = self.data.get("payment_method")
-        payment_method = PaymentMethod.objects.get(pk=payment_method_id)
+        if payment_method_id:
+            payment_method = PaymentMethod.objects.get(pk=payment_method_id)
 
-        if payment_method.type == lfs.payment.settings.PM_BANK:
-            if self.cleaned_data.get("account_number", "") == "":
-                self._errors["account_number"] = ErrorList([msg])
+            if payment_method.type == lfs.payment.settings.PM_BANK:
+                if self.cleaned_data.get("account_number", "") == "":
+                    self._errors["account_number"] = ErrorList([msg])
 
-            if self.cleaned_data.get("bank_identification_code", "") == "":
-                self._errors["bank_identification_code"] = ErrorList([msg])
+                if self.cleaned_data.get("bank_identification_code", "") == "":
+                    self._errors["bank_identification_code"] = ErrorList([msg])
 
-            if self.cleaned_data.get("bank_name", "") == "":
-                self._errors["bank_name"] = ErrorList([msg])
+                if self.cleaned_data.get("bank_name", "") == "":
+                    self._errors["bank_name"] = ErrorList([msg])
 
-            if self.cleaned_data.get("depositor", "") == "":
-                self._errors["depositor"] = ErrorList([msg])
+                if self.cleaned_data.get("depositor", "") == "":
+                    self._errors["depositor"] = ErrorList([msg])
 
         return self.cleaned_data
 
@@ -71,17 +72,18 @@ class CreditCardForm(forms.ModelForm):
 
         # Check data of selected payment method
         payment_method_id = self.data.get("payment_method")
-        payment_method = PaymentMethod.objects.get(pk=payment_method_id)
+        if payment_method_id:
+            payment_method = PaymentMethod.objects.get(pk=payment_method_id)
 
-        if payment_method.type == lfs.payment.settings.PM_CREDIT_CARD:
-            if self.cleaned_data.get("owner", "") == "":
-                self._errors["owner"] = ErrorList([msg])
+            if payment_method.type == lfs.payment.settings.PM_CREDIT_CARD:
+                if self.cleaned_data.get("owner", "") == "":
+                    self._errors["owner"] = ErrorList([msg])
 
-            if self.cleaned_data.get("number", "") == "":
-                self._errors["number"] = ErrorList([msg])
+                if self.cleaned_data.get("number", "") == "":
+                    self._errors["number"] = ErrorList([msg])
 
-            if self.cleaned_data.get("verification", "") == "":
-                self._errors["verification"] = ErrorList([msg])
+                if self.cleaned_data.get("verification", "") == "":
+                    self._errors["verification"] = ErrorList([msg])
 
         return self.cleaned_data
 

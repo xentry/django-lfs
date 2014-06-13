@@ -1051,13 +1051,13 @@ class ViewsTestCase(TestCase):
         ProductPropertyValue.objects.create(product=self.v1, property=color, value=str(red.id), type=PROPERTY_VALUE_TYPE_FILTER)
 
         # Create a test file
-        fh = open(os.path.join(os.path.dirname(__file__), "..", "utils", "data", "image1.jpg"))
+        fh = open(os.path.join(os.path.dirname(__file__), "..", "utils", "data", "image1.jpg"), 'rb')
         cf_1 = ContentFile(fh.read())
 
         self.file = File.objects.create(pk=1, title="Test File", slug="test-file", file=None)
         self.file.file.save("Laminat01.jpg", cf_1)
 
-        locale.setlocale(locale.LC_ALL, 'en_US.UTF-8')
+        #locale.setlocale(locale.LC_ALL, 'en_US.UTF-8')
 
     def test_file(self):
         request = RequestFactory().get("/")
@@ -3015,7 +3015,7 @@ class MiscTestCase(TestCase):
         Tests whether files on the file system are deleted properly when a File
         object has been deleted.
         """
-        fh = open(os.path.join(os.path.dirname(__file__), "..", "utils", "data", "image1.jpg"))
+        fh = open(os.path.join(os.path.dirname(__file__), "..", "utils", "data", "image1.jpg"), 'rb')
         cf_1 = ContentFile(fh.read())
 
         file = File.objects.create(pk=1, title="Test File", slug="test-file", file=None)
@@ -3030,7 +3030,7 @@ class MiscTestCase(TestCase):
         Tests whether images on the file system are deleted properly when a
         Image object has been deleted.
         """
-        fh = open(os.path.join(os.path.dirname(__file__), "..", "utils", "data", "image1.jpg"))
+        fh = open(os.path.join(os.path.dirname(__file__), "..", "utils", "data", "image1.jpg"), 'rb')
         cf_1 = ContentFile(fh.read())
 
         image = Image(title="Image 1")

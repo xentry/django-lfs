@@ -1,5 +1,6 @@
 # python imports
 from copy import deepcopy
+import json
 
 # django imports
 from django.conf import settings
@@ -10,7 +11,6 @@ from django.http import HttpResponseRedirect
 from django.shortcuts import render_to_response
 from django.template.loader import render_to_string
 from django.template import RequestContext
-from django.utils import simplejson
 from django.utils.translation import ugettext_lazy as _
 
 # lfs imports
@@ -186,6 +186,7 @@ def cart_inline(request, template_name="lfs/checkout/checkout_cart_inline.html")
                 "product": product,
                 "product_price_net": cart_item.get_price_net(request),
                 "product_price_gross": cart_item.get_price_gross(request),
+                "item_price_net": product.get_price(request),
                 "product_tax": cart_item.get_tax(request),
             })
 
@@ -396,7 +397,7 @@ def check_voucher(request):
     voucher_number = lfs.voucher.utils.get_current_voucher_number(request)
     lfs.voucher.utils.set_current_voucher_number(request, voucher_number)
 
-    result = simplejson.dumps({
+    result = json.dumps({
         "html": (("#cart-inline", cart_inline(request)),)
     })
 
@@ -411,7 +412,7 @@ def changed_checkout(request):
     _save_customer(request, customer)
     _save_country(request, customer)
 
-    result = simplejson.dumps({
+    result = json.dumps({
         "shipping": shipping_inline(request),
         "payment": payment_inline(request, form),
         "cart": cart_inline(request),
@@ -434,7 +435,7 @@ def changed_invoice_country(request):
         customer.sync_selected_to_default_invoice_address()
 
     am = AddressManagement(customer, address, "invoice")
-    result = simplejson.dumps({
+    result = json.dumps({
         "invoice_address": am.render(request, country_iso),
     })
 
@@ -455,7 +456,7 @@ def changed_shipping_country(request):
         customer.sync_selected_to_default_shipping_address()
 
     am = AddressManagement(customer, address, "shipping")
-    result = simplejson.dumps({
+    result = json.dumps({
         "shipping_address": am.render(request, country_iso),
     })
 

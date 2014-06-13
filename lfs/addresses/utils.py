@@ -8,10 +8,6 @@ import lfs.core.utils
 from lfs.addresses.settings import INVOICE_ADDRESS_FORM, SHIPPING_ADDRESS_FORM, CHECKOUT_NOT_REQUIRED_ADDRESS
 from lfs.core.models import Country
 
-# django-postal imports
-from postal.library import form_factory
-
-
 class AddressManagement(object):
     """
     Wrapper to manage the postal and the additional address.
@@ -77,19 +73,10 @@ class AddressManagement(object):
         else:
             return shop.shipping_countries.all()
 
-    def render(self, request, country_iso=None):
+    def render(self, request):
         """
         Renders the postal and the additional address form.
         """
-        if country_iso is None:
-            country_iso = self.address.country.code.upper()
-
-        form_model = form_factory(country_iso)
-        postal_form = form_model(initial=self.get_address_as_dict(), data=self.data, prefix=self.type)
-
-        countries = self.get_countries(request)
-        postal_form.fields["country"].choices = [(c.code.upper(), c.name) for c in countries]
-
         address_form_model = self.get_form_model()
         address_form = address_form_model(instance=self.address, data=self.data, prefix=self.type)
 
@@ -97,7 +84,6 @@ class AddressManagement(object):
         templates.insert(0, "lfs/addresses/%s_address_form.html" % self.type)
         template = select_template(templates)
         return template.render(RequestContext(request, {
-            "postal_form": postal_form,
             "address_form": address_form,
         }))
 
@@ -108,16 +94,10 @@ class AddressManagement(object):
         if self.type == CHECKOUT_NOT_REQUIRED_ADDRESS and self.data.get("no_%s" % CHECKOUT_NOT_REQUIRED_ADDRESS):
             return True
 
-        if self.data:
-            form_model = form_factory(self.data.get("%s-country" % self.type, self.address.country.code.upper()))
-        else:
-            form_model = form_factory(self.address.country.code.upper())
-        postal_form = form_model(data=self.data, initial=self.get_address_as_dict(), prefix=self.type)
-
         address_form_model = self.get_form_model()
         address_form = address_form_model(data=self.data, instance=self.address, prefix=self.type)
 
-        return postal_form.is_valid() and address_form.is_valid()
+        return address_form.is_valid()
 
     def save(self):
         """

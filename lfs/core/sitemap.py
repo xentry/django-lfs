@@ -1,6 +1,7 @@
 # python imports
 from datetime import datetime
 
+# improt django
 from django.contrib.sitemaps import Sitemap
 from lfs.catalog.models import Category
 from lfs.catalog.models import Product
