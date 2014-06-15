@@ -18,7 +18,7 @@ featured_changed = django.dispatch.Signal()
 order_created = django.dispatch.Signal()
 order_paid = django.dispatch.Signal()
 order_sent = django.dispatch.Signal()
-order_submitted = django.dispatch.Signal()
+order_submitted = django.dispatch.Signal(providing_args=["request"])
 order_state_changed = django.dispatch.Signal(providing_args=["order", "request", "old_state"])
 
 # Property
