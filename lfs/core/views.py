@@ -42,7 +42,7 @@ def server_error(request):
     for tb in traceback.format_tb(tb):
         response += "%s\n" % tb
 
-    if request.user:
+    if hasattr(request, 'user') and request.user:
         response += "User: %s\n" % request.user.username
 
     response += "\nREQUEST:\n%s" % request
