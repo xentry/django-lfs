@@ -120,7 +120,7 @@ def add_portlet(request, object_type_id, object_id, template_name="manage/portle
                 "slots": Slot.objects.all(),
             }, RequestContext(request))
 
-            return HttpResponse(simplejson.dumps({'html': result}),
+            return HttpResponse(json.dumps({'html': result}),
                                 mimetype='application/json')
 
         except ContentType.DoesNotExist:
