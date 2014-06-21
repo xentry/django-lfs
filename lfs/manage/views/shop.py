@@ -1,6 +1,3 @@
-# python imports
-import json
-
 # django imports
 from django.conf import settings
 from django.contrib.auth.decorators import permission_required

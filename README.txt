@@ -27,9 +27,11 @@ A demo shop can be tried here:
 Changes
 =======
 
-0.8.0a1
-=======
+0.9.0 alpha 1 (2014-06-19)
+==========================
 
+* Removes double colons from management forms
+* Removes django-tagging from dependencies
 * Add pluggable criteria
 * Added pluggable addresses
 * Add criteria for customer taxes

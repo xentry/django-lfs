@@ -3,14 +3,12 @@ import json
 
 # django imports
 from django.db.models import Q
-from django.core.exceptions import FieldError
 from django.http import HttpResponse
 from django.shortcuts import render_to_response
 from django.template import RequestContext
 from django.template.loader import render_to_string
 
 # lfs imports
-from lfs.catalog.models import Category
 from lfs.catalog.models import Product
 from lfs.catalog.settings import STANDARD_PRODUCT, PRODUCT_WITH_VARIANTS, VARIANT
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger

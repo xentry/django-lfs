@@ -1,6 +1,3 @@
-# python imports
-import json
-
 # django imports
 from django.contrib.auth.decorators import permission_required
 from django.contrib.contenttypes.models import ContentType

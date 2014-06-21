@@ -1,11 +1,7 @@
-# python imports
-import json
-
 # django imports
 from django.contrib.auth.decorators import permission_required
 from django.core.exceptions import ObjectDoesNotExist
 from django.core.urlresolvers import reverse
-from django.forms import ModelForm
 from django.http import HttpResponseRedirect
 from django.http import HttpResponse
 from django.shortcuts import get_object_or_404
@@ -20,7 +16,6 @@ import lfs.core.utils
 from lfs.caching.utils import lfs_get_object_or_404
 from lfs.core.utils import LazyEncoder
 from lfs.core.widgets.image import LFSImageInput
-from lfs.criteria import utils as criteria_utils
 from lfs.customer.models import Customer
 from lfs.manage.shipping_methods.forms import ShippingMethodAddForm
 from lfs.manage.shipping_methods.forms import ShippingMethodForm

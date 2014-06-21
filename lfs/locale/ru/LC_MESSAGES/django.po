@@ -7,15 +7,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LFS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-13 23:38+0400\n"
-"PO-Revision-Date: 2014-06-13 23:25+0400\n"
+"POT-Creation-Date: 2014-06-21 16:26+0400\n"
+"PO-Revision-Date: 2014-06-21 16:19+0400\n"
 "Last-Translator: axentry@gmail.com <axentry@gmail.com>\n"
 "Language-Team: Kai Diefenbach <kai.diefenbach@iqpp.de>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.6.3\n"
+"X-Generator: Poedit 1.6.5\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
@@ -36,9 +36,8 @@ msgid "Left"
 msgstr ""
 
 #: .\other_translations.py:7
-#, fuzzy
 msgid "Right"
-msgstr "вес"
+msgstr "Право"
 
 #: .\other_translations.py:8
 msgid "Average Rating"
@@ -86,11 +85,11 @@ msgstr "Имя"
 msgid "Lastname"
 msgstr "Фамилия"
 
-#: .\addresses\models.py:47 .\core\management\commands\lfs_migrate.py:614
+#: .\addresses\models.py:47 .\core\management\commands\lfs_migrate.py:632
 msgid "Line 1"
 msgstr ""
 
-#: .\addresses\models.py:48 .\core\management\commands\lfs_migrate.py:615
+#: .\addresses\models.py:48 .\core\management\commands\lfs_migrate.py:633
 msgid "Line 2"
 msgstr ""
 
@@ -122,9 +121,8 @@ msgid "Created"
 msgstr "Создан"
 
 #: .\addresses\models.py:54
-#, fuzzy
 msgid "Modified"
-msgstr "Изменить"
+msgstr "Изменен"
 
 #: .\addresses\models.py:117
 msgid "Company name"
@@ -175,8 +173,8 @@ msgstr "Дата изменения"
 msgid "Cart"
 msgstr "Корзина"
 
-#: .\cart\models.py:221 .\catalog\models.py:2002 .\catalog\models.py:2275
-#: .\catalog\models.py:2348 .\catalog\models.py:2729 .\marketing\models.py:13
+#: .\cart\models.py:221 .\catalog\models.py:2002 .\catalog\models.py:2274
+#: .\catalog\models.py:2347 .\catalog\models.py:2728 .\marketing\models.py:13
 #: .\marketing\models.py:26 .\marketing\models.py:33
 #: .\templates\manage\cart\cart_inline.html:102
 #: .\templates\manage\reviews\review_inline.html:78
@@ -193,14 +191,41 @@ msgstr "Количество"
 msgid "Cart item"
 msgstr "Товар в корзине"
 
-#: .\cart\models.py:376 .\catalog\models.py:2219 .\catalog\models.py:2248
-#: .\catalog\models.py:2276 .\catalog\models.py:2307 .\catalog\models.py:2350
+#: .\cart\models.py:376 .\catalog\models.py:2218 .\catalog\models.py:2247
+#: .\catalog\models.py:2275 .\catalog\models.py:2306 .\catalog\models.py:2349
 #: .\order\models.py:228 .\templates\manage\properties\property.html:43
 msgid "Property"
 msgstr "Свойство"
 
+#: .\cart\views.py:273
+#, python-format
+msgid "%(name)s must be between %(min)s and %(max)s %(unit)s."
+msgstr ""
+
+#: .\cart\views.py:287
+#, python-format
+msgid ""
+"Your entered value for %(name)s (%(value)s) is not in valid step width, "
+"which is %(step)s."
+msgstr ""
+
+#: .\cart\views.py:303 .\cart\views.py:418
+#, python-format
+msgid "Sorry, but '%(product)s' is not available anymore."
+msgstr ""
+
+#: .\cart\views.py:305 .\cart\views.py:420
+#, python-format
+msgid "Sorry, but '%(product)s' is only one time available."
+msgstr ""
+
+#: .\cart\views.py:307 .\cart\views.py:422
+#, python-format
+msgid "Sorry, but '%(product)s' is only %(amount)s times available."
+msgstr ""
+
 #: .\catalog\models.py:159 .\catalog\models.py:590 .\catalog\models.py:2036
-#: .\catalog\models.py:2134 .\catalog\models.py:2309 .\catalog\models.py:2483
+#: .\catalog\models.py:2133 .\catalog\models.py:2308 .\catalog\models.py:2482
 #: .\core\models.py:19 .\core\models.py:38 .\core\models.py:161
 #: .\discounts\models.py:42 .\export\models.py:16 .\manufacturer\models.py:17
 #: .\payment\models.py:68 .\shipping\models.py:71
@@ -227,7 +252,7 @@ msgstr "Свойство"
 #: .\templates\manage\product\products_inline.html:17
 #: .\templates\manage\product\related_products_inline.html:47
 #: .\templates\manage\product\related_products_inline.html:107
-#: .\templates\manage\product\variants.html:148
+#: .\templates\manage\product\variants.html:152
 #: .\templates\manage\properties\options_inline.html:13
 #: .\templates\manage\property_groups\products_inline.html:45
 #: .\templates\manage\property_groups\products_inline.html:105
@@ -246,7 +271,7 @@ msgstr "Имя"
 msgid "Slug"
 msgstr "Ссылка"
 
-#: .\catalog\models.py:161 .\catalog\models.py:657 .\catalog\models.py:2349
+#: .\catalog\models.py:161 .\catalog\models.py:657 .\catalog\models.py:2348
 #: .\core\models.py:80
 msgid "Parent"
 msgstr "Категория"
@@ -255,7 +280,7 @@ msgstr "Категория"
 msgid "Show all products"
 msgstr "Показать все товары"
 
-#: .\catalog\models.py:167 .\catalog\models.py:2037 .\catalog\models.py:2137
+#: .\catalog\models.py:167 .\catalog\models.py:2037 .\catalog\models.py:2136
 #: .\catalog\settings.py:70 .\discounts\models.py:48 .\export\models.py:18
 #: .\templates\manage\manage_base.html:90
 #: .\templates\manage\cart\carts_inline.html:25
@@ -281,14 +306,14 @@ msgstr "Товары"
 msgid "Short description"
 msgstr "Краткое описание"
 
-#: .\catalog\models.py:169 .\catalog\models.py:601 .\catalog\models.py:2518
-#: .\catalog\models.py:2727 .\core\models.py:166 .\customer_tax\models.py:22
+#: .\catalog\models.py:169 .\catalog\models.py:601 .\catalog\models.py:2517
+#: .\catalog\models.py:2726 .\core\models.py:166 .\customer_tax\models.py:22
 #: .\manufacturer\models.py:21 .\payment\models.py:69 .\shipping\models.py:72
 #: .\tax\models.py:18 .\templates\manage\product\attachments.html:21
 msgid "Description"
 msgstr "Описание"
 
-#: .\catalog\models.py:170 .\catalog\models.py:2406 .\core\models.py:167
+#: .\catalog\models.py:170 .\catalog\models.py:2405 .\core\models.py:167
 #: .\manufacturer\models.py:22 .\payment\models.py:71 .\shipping\models.py:74
 #: .\templates\manage\category\data.html:83
 #: .\templates\manage\order\order_inline.html:105
@@ -297,10 +322,10 @@ msgid "Image"
 msgstr "Картинка"
 
 #: .\catalog\models.py:171 .\catalog\models.py:2004 .\catalog\models.py:2038
-#: .\catalog\models.py:2138 .\catalog\models.py:2249 .\catalog\models.py:2277
-#: .\catalog\models.py:2311 .\catalog\models.py:2407 .\catalog\models.py:2487
-#: .\catalog\models.py:2730 .\core\models.py:79
-#: .\core\management\commands\lfs_migrate.py:611 .\criteria\models.py:107
+#: .\catalog\models.py:2137 .\catalog\models.py:2248 .\catalog\models.py:2276
+#: .\catalog\models.py:2310 .\catalog\models.py:2406 .\catalog\models.py:2486
+#: .\catalog\models.py:2729 .\core\models.py:79
+#: .\core\management\commands\lfs_migrate.py:629 .\criteria\models.py:107
 #: .\manufacturer\models.py:23 .\marketing\models.py:14
 #: .\marketing\models.py:34 .\page\models.py:18
 #: .\templates\manage\marketing\featured_inline.html:108
@@ -343,22 +368,22 @@ msgid "Category cols"
 msgstr "Столбцы категорий"
 
 #: .\catalog\models.py:182 .\catalog\models.py:605 .\core\models.py:191
-#: .\core\management\commands\lfs_migrate.py:563
-#: .\core\management\commands\lfs_migrate.py:587 .\manufacturer\models.py:30
+#: .\core\management\commands\lfs_migrate.py:581
+#: .\core\management\commands\lfs_migrate.py:605 .\manufacturer\models.py:30
 #: .\page\models.py:24
 msgid "Meta title"
 msgstr "Заголовок META"
 
 #: .\catalog\models.py:183 .\catalog\models.py:606 .\core\models.py:192
-#: .\core\management\commands\lfs_migrate.py:564
-#: .\core\management\commands\lfs_migrate.py:588 .\manufacturer\models.py:31
+#: .\core\management\commands\lfs_migrate.py:582
+#: .\core\management\commands\lfs_migrate.py:606 .\manufacturer\models.py:31
 #: .\page\models.py:25
 msgid "Meta keywords"
 msgstr "Ключевые META"
 
 #: .\catalog\models.py:184 .\catalog\models.py:607 .\core\models.py:193
-#: .\core\management\commands\lfs_migrate.py:565
-#: .\core\management\commands\lfs_migrate.py:589 .\manufacturer\models.py:32
+#: .\core\management\commands\lfs_migrate.py:583
+#: .\core\management\commands\lfs_migrate.py:607 .\manufacturer\models.py:32
 #: .\page\models.py:26
 msgid "Meta description"
 msgstr "Описание META"
@@ -401,7 +426,7 @@ msgstr ""
 #: .\templates\manage\product\products_inline.html:23
 #: .\templates\manage\product\related_products_inline.html:50
 #: .\templates\manage\product\related_products_inline.html:110
-#: .\templates\manage\product\variants.html:144
+#: .\templates\manage\product\variants.html:148
 #: .\templates\manage\property_groups\products_inline.html:48
 #: .\templates\manage\property_groups\products_inline.html:108
 msgid "SKU"
@@ -411,8 +436,8 @@ msgstr "Артикул"
 msgid "Your unique article number of the product."
 msgstr ""
 
-#: .\catalog\models.py:593 .\catalog\models.py:597 .\catalog\models.py:2146
-#: .\catalog\models.py:2310 .\criteria\models.py:383 .\order\models.py:66
+#: .\catalog\models.py:593 .\catalog\models.py:597 .\catalog\models.py:2145
+#: .\catalog\models.py:2309 .\criteria\models.py:383 .\order\models.py:66
 #: .\payment\models.py:73 .\payment\models.py:113 .\shipping\models.py:76
 #: .\shipping\models.py:152 .\templates\manage\cart\cart_inline.html:105
 #: .\templates\manage\customer\customer_inline.html:81
@@ -422,7 +447,7 @@ msgstr ""
 #: .\templates\manage\order\orders_inline.html:24
 #: .\templates\manage\payment\payment_method_prices.html:27
 #: .\templates\manage\product\products_inline.html:34
-#: .\templates\manage\product\variants.html:159
+#: .\templates\manage\product\variants.html:163
 #: .\templates\manage\properties\options_inline.html:16
 #: .\templates\manage\shipping_methods\shipping_method_prices.html:27
 msgid "Price"
@@ -437,7 +462,6 @@ msgid "Price unit"
 msgstr "Цена за единицу"
 
 #: .\catalog\models.py:599
-#, fuzzy
 msgid "Quantity field unit"
 msgstr "Тип размерности"
 
@@ -483,7 +507,7 @@ msgstr "Цена распродажи"
 #: .\templates\manage\product\products_inline.html:28
 #: .\templates\manage\product\related_products_inline.html:53
 #: .\templates\manage\product\related_products_inline.html:113
-#: .\templates\manage\product\variants.html:137
+#: .\templates\manage\product\variants.html:141
 #: .\templates\manage\property_groups\products_inline.html:51
 #: .\templates\manage\property_groups\products_inline.html:111
 #: .\templates\manage\reviews\review.html:29
@@ -504,7 +528,7 @@ msgid "Manual delivery time"
 msgstr "Индивидуальный срок поставки"
 
 #: .\catalog\models.py:625 .\core\models.py:173
-#: .\core\management\commands\lfs_migrate.py:508 .\shipping\models.py:77
+#: .\core\management\commands\lfs_migrate.py:514 .\shipping\models.py:77
 msgid "Delivery time"
 msgstr "Срок поставки"
 
@@ -524,7 +548,7 @@ msgstr "Управление остатками"
 msgid "Stock amount"
 msgstr "Наличие"
 
-#: .\catalog\models.py:631 .\core\management\commands\lfs_migrate.py:555
+#: .\catalog\models.py:631 .\core\management\commands\lfs_migrate.py:573
 msgid "Active packing"
 msgstr "Рассчет упаковки"
 
@@ -567,8 +591,8 @@ msgstr "Подтип"
 msgid "Default variant"
 msgstr "Обычный вариант"
 
-#: .\catalog\models.py:650 .\core\management\commands\lfs_migrate.py:547
-#: .\templates\manage\product\variants.html:226
+#: .\catalog\models.py:650 .\core\management\commands\lfs_migrate.py:565
+#: .\templates\manage\product\variants.html:230
 msgid "Category variant"
 msgstr "Вариант для категории"
 
@@ -648,15 +672,15 @@ msgstr "Активная цена"
 msgid "Price Calculation"
 msgstr "Формула рассчета"
 
-#: .\catalog\models.py:680 .\core\management\commands\lfs_migrate.py:548
+#: .\catalog\models.py:680 .\core\management\commands\lfs_migrate.py:566
 msgid "Active base price"
 msgstr "Активная базовая цена"
 
-#: .\catalog\models.py:681 .\core\management\commands\lfs_migrate.py:549
+#: .\catalog\models.py:681 .\core\management\commands\lfs_migrate.py:567
 msgid "Base price unit"
 msgstr "Размерность"
 
-#: .\catalog\models.py:682 .\core\management\commands\lfs_migrate.py:550
+#: .\catalog\models.py:682 .\core\management\commands\lfs_migrate.py:568
 msgid "Base price amount"
 msgstr "Цена"
 
@@ -671,16 +695,15 @@ msgstr "Артикул производителя"
 msgid "Manufacturer"
 msgstr "Производитель"
 
-#: .\catalog\models.py:688 .\core\management\commands\lfs_migrate.py:546
+#: .\catalog\models.py:688 .\core\management\commands\lfs_migrate.py:564
 msgid "Type of quantity field"
 msgstr "Точность размерности"
 
 #: .\catalog\models.py:2003
-#, fuzzy
 msgid "Accessory"
 msgstr "Аксессуар"
 
-#: .\catalog\models.py:2135 .\catalog\models.py:2405 .\catalog\models.py:2726
+#: .\catalog\models.py:2134 .\catalog\models.py:2404 .\catalog\models.py:2725
 #: .\core\models.py:76 .\page\models.py:16
 #: .\templates\manage\portlets\portlets_inline.html:41
 #: .\templates\manage\product\attachments.html:18
@@ -689,76 +712,76 @@ msgstr "Аксессуар"
 msgid "Title"
 msgstr "Наименование"
 
-#: .\catalog\models.py:2136 .\catalog\models.py:2247 .\core\models.py:78
+#: .\catalog\models.py:2135 .\catalog\models.py:2246 .\core\models.py:78
 msgid "Group"
 msgstr "Группа"
 
-#: .\catalog\models.py:2139 .\catalog\models.py:2517
+#: .\catalog\models.py:2138 .\catalog\models.py:2516
 msgid "Unit"
 msgstr "Единица"
 
-#: .\catalog\models.py:2140
+#: .\catalog\models.py:2139
 msgid "Display on product"
 msgstr "Отображать на товаре"
 
-#: .\catalog\models.py:2141
+#: .\catalog\models.py:2140
 msgid "Local"
 msgstr ""
+
+#: .\catalog\models.py:2141 .\core\management\commands\lfs_migrate.py:542
+msgid "For Variants"
+msgstr "Варианты"
 
 #: .\catalog\models.py:2142
 msgid "Filterable"
 msgstr "Фильтруемое"
 
 #: .\catalog\models.py:2143
-msgid "Display no results"
-msgstr "Отображать без результатов"
-
-#: .\catalog\models.py:2144
 msgid "Configurable"
 msgstr "Кофигурируемое"
 
-#: .\catalog\models.py:2145 .\catalog\models.py:2353 .\customer\models.py:187
+#: .\catalog\models.py:2144 .\catalog\models.py:2352 .\customer\models.py:187
 #: .\discounts\models.py:45 .\payment\models.py:76
 #: .\templates\manage\portlets\portlets_inline.html:38
 #: .\templates\manage\voucher\vouchers_inline.html:70
 msgid "Type"
 msgstr "Тип"
 
-#: .\catalog\models.py:2147
+#: .\catalog\models.py:2146
 msgid "Display price"
 msgstr "Отображать цену"
 
-#: .\catalog\models.py:2148
+#: .\catalog\models.py:2147
 #: .\templates\manage\payment\payment_method_prices.html:9
 #: .\templates\manage\shipping_methods\shipping_method_prices.html:9
 msgid "Add price"
 msgstr "Добавить цену"
 
-#: .\catalog\models.py:2151 .\catalog\models.py:2515
+#: .\catalog\models.py:2150 .\catalog\models.py:2514
 msgid "Min"
 msgstr "Мин."
 
-#: .\catalog\models.py:2152 .\catalog\models.py:2516
+#: .\catalog\models.py:2151 .\catalog\models.py:2515
 msgid "Max"
 msgstr "Макс."
 
-#: .\catalog\models.py:2153 .\catalog\models.py:2159
+#: .\catalog\models.py:2152 .\catalog\models.py:2158
 msgid "Step"
 msgstr "Шаг"
 
-#: .\catalog\models.py:2154
+#: .\catalog\models.py:2153
 msgid "Decimal places"
 msgstr "Цифр после запятой"
 
-#: .\catalog\models.py:2156
+#: .\catalog\models.py:2155
 msgid "Required"
 msgstr ""
 
-#: .\catalog\models.py:2158 .\templates\manage\properties\step_inline.html:2
+#: .\catalog\models.py:2157 .\templates\manage\properties\step_inline.html:2
 msgid "Step type"
 msgstr "Тип шага"
 
-#: .\catalog\models.py:2164 .\templates\manage\manage_base.html:94
+#: .\catalog\models.py:2163 .\templates\manage\manage_base.html:94
 #: .\templates\manage\manage_base.html:96
 #: .\templates\manage\product\product.html:110
 #: .\templates\manage\properties\no_properties.html:11
@@ -767,33 +790,33 @@ msgstr "Тип шага"
 msgid "Properties"
 msgstr "Свойства"
 
-#: .\catalog\models.py:2351 .\discounts\models.py:44
+#: .\catalog\models.py:2350 .\discounts\models.py:44
 #: .\manage\voucher\forms.py:40
 #: .\templates\manage\voucher\vouchers_inline.html:73
 msgid "Value"
 msgstr "Стоимость"
 
-#: .\catalog\models.py:2352
+#: .\catalog\models.py:2351
 msgid "Value as float"
 msgstr ""
 
-#: .\catalog\models.py:2401 .\catalog\models.py:2444 .\criteria\models.py:102
+#: .\catalog\models.py:2400 .\catalog\models.py:2443 .\criteria\models.py:102
 msgid "Content type"
 msgstr "Тип наполнения"
 
-#: .\catalog\models.py:2402 .\catalog\models.py:2445 .\criteria\models.py:103
+#: .\catalog\models.py:2401 .\catalog\models.py:2444 .\criteria\models.py:103
 msgid "Content id"
 msgstr "Код наполнения"
 
-#: .\catalog\models.py:2484
+#: .\catalog\models.py:2483
 msgid "Display files"
 msgstr "Показывать файлы"
 
-#: .\catalog\models.py:2485 .\templates\manage\manage_base.html:101
+#: .\catalog\models.py:2484 .\templates\manage\manage_base.html:101
 msgid "HTML"
 msgstr "HTML"
 
-#: .\catalog\models.py:2486 .\templates\manage\static_block\files.html:2
+#: .\catalog\models.py:2485 .\templates\manage\static_block\files.html:2
 #: .\templates\manage\static_block\static_block.html:42
 msgid "Files"
 msgstr "Файлы"
@@ -872,7 +895,7 @@ msgid "Configurable product"
 msgstr "Рассчитываемый"
 
 #: .\catalog\settings.py:53 .\catalog\settings.py:141 .\export\settings.py:11
-#: .\templates\manage\product\variants.html:162
+#: .\templates\manage\product\variants.html:166
 msgid "Default"
 msgstr "Стандарт"
 
@@ -984,11 +1007,11 @@ msgstr "Товар был изменен в соответствии с ваши
 msgid "Price has been changed according to your selection."
 msgstr "Товар был изменен в соответствии с вашим выбором."
 
-#: .\catalog\views.py:166 .\catalog\views.py:674
+#: .\catalog\views.py:166 .\catalog\views.py:730
 msgid "The choosen combination of properties is not deliverable."
 msgstr "Сочетание выбранных свойств не поставляется."
 
-#: .\catalog\views.py:499 .\manufacturer\views.py:175
+#: .\catalog\views.py:555 .\manufacturer\views.py:175
 #, fuzzy, python-format
 msgid "%(count)d product"
 msgid_plural "%(count)d products"
@@ -1032,7 +1055,7 @@ msgstr "Вы вошли."
 msgid "You have been registered and logged in."
 msgstr "Вы зарегистрировались и вошли."
 
-#: .\checkout\views.py:241
+#: .\checkout\views.py:245
 msgid "Please confirm our terms and conditions"
 msgstr ""
 
@@ -1080,7 +1103,7 @@ msgstr "Страны, в которые доставка возможна "
 msgid "Default shipping country"
 msgstr "Страна доставки по умолчанию"
 
-#: .\core\models.py:183 .\core\management\commands\lfs_migrate.py:663
+#: .\core\models.py:183 .\core\management\commands\lfs_migrate.py:681
 msgid "Use international currency codes"
 msgstr "Использовать международные коды валют"
 
@@ -1104,11 +1127,11 @@ msgstr ""
 msgid "Footer"
 msgstr ""
 
-#: .\core\management\commands\lfs_migrate.py:661
+#: .\core\management\commands\lfs_migrate.py:679
 msgid "Default Shop Locale"
 msgstr "Локаль по умолчанию"
 
-#: .\core\management\commands\lfs_migrate.py:666
+#: .\core\management\commands\lfs_migrate.py:684
 msgid "Supplier"
 msgstr ""
 
@@ -1361,7 +1384,7 @@ msgid "Script"
 msgstr "Скрипт"
 
 #: .\export\models.py:20 .\templates\manage\product\product.html:102
-#: .\templates\manage\product\variants.html:98
+#: .\templates\manage\product\variants.html:99
 msgid "Variants"
 msgstr "Варианты"
 
@@ -1377,7 +1400,7 @@ msgstr "---"
 msgid "Cheapest"
 msgstr "Наидешевейший"
 
-#: .\export\settings.py:13 .\manage\product\variants.py:60
+#: .\export\settings.py:13 .\manage\product\variants.py:56
 #: .\templates\manage\category\category_filter.html:5
 #: .\templates\manage\manufacturers\manufacturer_filter.html:5
 #: .\templates\manage\order\order_filters_inline.html:50
@@ -1402,33 +1425,33 @@ msgstr "Ваш заказ получен"
 msgid "New review has been added"
 msgstr "Добавлено новое мнение."
 
-#: .\manage\actions\views.py:98
+#: .\manage\actions\views.py:95
 msgid "The action has been saved."
 msgstr "Действие сохранено."
 
-#: .\manage\actions\views.py:100 .\manage\categories\category.py:125
-#: .\manage\categories\view.py:48 .\manage\manufacturers\views.py:99
-#: .\manage\manufacturers\views.py:298 .\manage\product\product.py:228
-#: .\manage\product\product.py:447 .\manage\seo\views.py:95
-#: .\manage\shipping_methods\views.py:336 .\manage\views\payment.py:346
-#: .\manage\views\shop.py:132 .\manage\views\shop.py:155
-#: .\manage\views\shop.py:181
+#: .\manage\actions\views.py:97 .\manage\categories\category.py:122
+#: .\manage\categories\view.py:45 .\manage\manufacturers\views.py:96
+#: .\manage\manufacturers\views.py:295 .\manage\product\product.py:228
+#: .\manage\product\product.py:447 .\manage\seo\views.py:92
+#: .\manage\shipping_methods\views.py:331 .\manage\views\payment.py:343
+#: .\manage\views\shop.py:129 .\manage\views\shop.py:152
+#: .\manage\views\shop.py:178
 msgid "Please correct the indicated errors."
 msgstr "Исправьте обозначенные ошибки."
 
-#: .\manage\actions\views.py:127
+#: .\manage\actions\views.py:124
 msgid "Action has been added."
 msgstr "Действие добавлено."
 
-#: .\manage\actions\views.py:149
+#: .\manage\actions\views.py:146
 msgid "Action has been deleted."
 msgstr "Действие удалено."
 
-#: .\manage\actions\views.py:169
+#: .\manage\actions\views.py:166
 msgid "The actions have been sorted."
 msgstr "Действия отсортированы."
 
-#: .\manage\categories\category.py:79
+#: .\manage\categories\category.py:76
 #, python-format
 msgid ""
 "Do you really want to delete the category <b>'%(name)s'</b> and all its sub "
@@ -1437,39 +1460,39 @@ msgstr ""
 "Вы действительно хотите удалить категорию <b>'%(name)s'</b> и все ее "
 "вложенные категории?"
 
-#: .\manage\categories\category.py:123
+#: .\manage\categories\category.py:120
 msgid "Category data have been saved."
 msgstr "Данные категорий сохранены."
 
-#: .\manage\categories\category.py:220
+#: .\manage\categories\category.py:217
 msgid "The categories have been sorted."
 msgstr "Категории отсортированы."
 
-#: .\manage\categories\products.py:202
+#: .\manage\categories\products.py:199
 msgid "Selected products have been added to category."
 msgstr "Выбранные товары добавлены в категорию."
 
-#: .\manage\categories\products.py:231
+#: .\manage\categories\products.py:228
 msgid "Selected products have been removed from category."
 msgstr "Выбранные товары удалены из категории."
 
-#: .\manage\categories\view.py:46 .\manage\manufacturers\views.py:97
+#: .\manage\categories\view.py:43 .\manage\manufacturers\views.py:94
 msgid "View data has been saved."
 msgstr "Данные сохранены."
 
-#: .\manage\customer_tax\views.py:110
+#: .\manage\customer_tax\views.py:107
 msgid "Customer tax has been added."
 msgstr "Создан новый налог покупателя."
 
-#: .\manage\customer_tax\views.py:133
+#: .\manage\customer_tax\views.py:130
 msgid "Customer tax has been deleted."
 msgstr "Налог покупателя удален."
 
-#: .\manage\customer_tax\views.py:150
+#: .\manage\customer_tax\views.py:147
 msgid "Criteria have been changed."
 msgstr "Критерии изменены."
 
-#: .\manage\customer_tax\views.py:175
+#: .\manage\customer_tax\views.py:172
 msgid "Data have been saved."
 msgstr "Данные сохранены."
 
@@ -1485,28 +1508,28 @@ msgstr "Срок поставки добавлен."
 msgid "Delivery time has been deleted."
 msgstr "Срок поставки удален."
 
-#: .\manage\discounts\views.py:134
+#: .\manage\discounts\views.py:131
 msgid "Discount method has been added."
 msgstr "Метод рассчета скидки добавлен."
 
-#: .\manage\discounts\views.py:158 .\manage\shipping_methods\views.py:214
-#: .\manage\views\payment.py:227 .\manage\views\payment.py:248
+#: .\manage\discounts\views.py:155 .\manage\shipping_methods\views.py:209
+#: .\manage\views\payment.py:224 .\manage\views\payment.py:245
 msgid "Changes have been saved."
 msgstr "Изменения сохранены."
 
-#: .\manage\discounts\views.py:179
+#: .\manage\discounts\views.py:176
 msgid "Discount data has been saved."
 msgstr "Данные скидки сохранены."
 
-#: .\manage\discounts\views.py:197
+#: .\manage\discounts\views.py:194
 msgid "Discount has been deleted."
 msgstr "Скидка удалена."
 
-#: .\manage\discounts\views.py:216 .\manage\property_groups\views.py:293
+#: .\manage\discounts\views.py:213 .\manage\property_groups\views.py:290
 msgid "Products have been assigned."
 msgstr "Товары назначены."
 
-#: .\manage\discounts\views.py:237 .\manage\property_groups\views.py:317
+#: .\manage\discounts\views.py:234 .\manage\property_groups\views.py:314
 msgid "Products have been removed."
 msgstr "Товары убраны."
 
@@ -1526,79 +1549,78 @@ msgid "left"
 msgstr ""
 
 #: .\manage\images\views.py:144
-#, fuzzy
 msgid "right"
-msgstr "вес"
+msgstr "право"
 
-#: .\manage\manufacturers\products.py:205
+#: .\manage\manufacturers\products.py:202
 msgid "Selected products have been assigned to manufacturer."
 msgstr "Выбранные товары присвоены поставщику"
 
-#: .\manage\manufacturers\products.py:232
+#: .\manage\manufacturers\products.py:229
 msgid "Selected products are no longer assigned to manufacturer."
 msgstr "Выбранные товары добавлены в список поставщика."
 
-#: .\manage\manufacturers\views.py:296
+#: .\manage\manufacturers\views.py:293
 msgid "Manufacturer data has been saved."
 msgstr "Данные поставщика сохранены."
 
-#: .\manage\pages\views.py:131
+#: .\manage\pages\views.py:128
 msgid "Data has been saved."
 msgstr "Данные сохранены."
 
-#: .\manage\pages\views.py:149
+#: .\manage\pages\views.py:146
 msgid "Page has been added."
 msgstr "Страница добавлена."
 
-#: .\manage\pages\views.py:171
+#: .\manage\pages\views.py:168
 msgid "Page has been deleted."
 msgstr "Страница удалена."
 
-#: .\manage\pages\views.py:192
+#: .\manage\pages\views.py:189
 msgid "The pages have been sorted."
 msgstr "Страницы отсортированы."
 
-#: .\manage\product\accessories.py:164
+#: .\manage\product\accessories.py:161
 msgid "Accessories have been added."
 msgstr "Аксессуары добавлены."
 
-#: .\manage\product\accessories.py:196
+#: .\manage\product\accessories.py:193
 msgid "Accessories have been removed."
 msgstr "Аксессуары удалены."
 
-#: .\manage\product\accessories.py:226 .\manage\product\accessories.py:246
+#: .\manage\product\accessories.py:223 .\manage\product\accessories.py:243
 msgid "Accessories have been updated."
 msgstr "Аксессуары обновлены."
 
-#: .\manage\product\attachments.py:38
+#: .\manage\product\attachments.py:35
 msgid "Attachments have been added."
 msgstr "Файлы добавлены."
 
-#: .\manage\product\attachments.py:70 .\manage\product\attachments.py:82
+#: .\manage\product\attachments.py:67 .\manage\product\attachments.py:79
 msgid "Attachment has been updated."
 msgstr "Файлы обновлены."
 
-#: .\manage\product\attachments.py:73
+#: .\manage\product\attachments.py:70
 msgid "Attachment has been deleted."
 msgstr "Файлы удалены."
 
-#: .\manage\product\categories.py:94
+#: .\manage\product\categories.py:93
 msgid "Categories have been saved."
 msgstr "Категории сохранены."
 
-#: .\manage\product\images.py:41
+#: .\manage\product\images.py:38
 msgid "Images has been added."
 msgstr "Картинки добавлены."
 
-#: .\manage\product\images.py:81
+#: .\manage\product\images.py:78
 msgid "Images has been deleted."
 msgstr "Картинки удалены."
 
-#: .\manage\product\images.py:91
+#: .\manage\product\images.py:88
 msgid "Images has been updated."
 msgstr "Картинки обновлены."
 
-#: .\manage\product\images.py:191
+#: .\manage\product\images.py:188
 msgid "Active images has been updated."
 msgstr "Активные картинки обновлены."
 
@@ -1630,56 +1652,55 @@ msgstr "Товары сохранены."
 msgid "Product filters have been set"
 msgstr "Фильтры товара сохранены."
 
-#: .\manage\product\related_products.py:163
+#: .\manage\product\related_products.py:160
 msgid "Related products have been added."
 msgstr "Похожие товары добавлены."
 
-#: .\manage\product\related_products.py:191
+#: .\manage\product\related_products.py:188
 msgid "Related products have been removed."
 msgstr "Похожие товары удалены"
 
-#: .\manage\product\related_products.py:212
+#: .\manage\product\related_products.py:209
 msgid "Related products have been updated."
 msgstr "Похожие товары обновлены."
 
-#: .\manage\product\variants.py:306 .\manage\property\views.py:443
+#: .\manage\product\variants.py:302 .\manage\property\views.py:440
 msgid "Property has been added."
 msgstr "Свойство добавлено."
 
-#: .\manage\product\variants.py:331 .\manage\product\variants.py:434
+#: .\manage\product\variants.py:327 .\manage\product\variants.py:430
 msgid "Property has been deleted."
 msgstr "Свойство удалено."
 
-#: .\manage\product\variants.py:396 .\manage\property\views.py:491
+#: .\manage\product\variants.py:392 .\manage\property\views.py:488
 msgid "Option has been added."
 msgstr "Опция добавлена."
 
-#: .\manage\product\variants.py:398
+#: .\manage\product\variants.py:394
 msgid "Invalid data. Correct it and try again."
 msgstr ""
 
-#: .\manage\product\variants.py:514
-#, fuzzy
+#: .\manage\product\variants.py:510
 msgid "No variants have been added."
-msgstr "Варианты добавлены."
+msgstr "Варианты не были добавлены."
 
-#: .\manage\product\variants.py:517
+#: .\manage\product\variants.py:513
 msgid "Variants have been added."
 msgstr "Варианты добавлены."
 
-#: .\manage\product\variants.py:543
+#: .\manage\product\variants.py:539
 msgid "Variants have been deleted."
 msgstr "Варианты удалены."
 
-#: .\manage\product\variants.py:558
+#: .\manage\product\variants.py:554
 msgid "Variants have been saved."
 msgstr "Варианты были сохранены."
 
-#: .\manage\product\variants.py:706
+#: .\manage\product\variants.py:702
 msgid "Sub type has been saved."
 msgstr "Тип сохранен."
 
-#: .\manage\product\variants.py:730
+#: .\manage\product\variants.py:726
 msgid "Category variant has been saved."
 msgstr "Вариант для категории сохранён."
 
@@ -1695,142 +1716,139 @@ msgstr "Налог добавлен."
 msgid "Tax has been deleted."
 msgstr "Налог удален."
 
-#: .\manage\property\views.py:76
+#: .\manage\property\views.py:73
 msgid "Property type has been saved."
 msgstr "Тип свойства сохранен."
 
-#: .\manage\property\views.py:249
+#: .\manage\property\views.py:246
 msgid "Property type has been changed."
 msgstr "Тип свойства изменен."
 
-#: .\manage\property\views.py:307
+#: .\manage\property\views.py:304
 msgid "Validators have been saved."
 msgstr "Параметры последовательности сохранены."
 
-#: .\manage\property\views.py:340
+#: .\manage\property\views.py:337
 msgid "Step range has been saved."
 msgstr "Диапазон шага сохранен."
 
-#: .\manage\property\views.py:362
+#: .\manage\property\views.py:359
 msgid "Step type has been saved."
 msgstr "Тип шага сохранен."
 
-#: .\manage\property\views.py:377
+#: .\manage\property\views.py:374
 msgid "Step has been added."
 msgstr "Шаг добавлен."
 
-#: .\manage\property\views.py:390
+#: .\manage\property\views.py:387
 msgid "Steps have been updated."
 msgstr "Шаги обновлены."
 
-#: .\manage\property\views.py:416
+#: .\manage\property\views.py:413
 msgid "The step has been saved."
 msgstr "Шаг удален."
 
-#: .\manage\property\views.py:493
+#: .\manage\property\views.py:490
 msgid "Option could not be added."
 msgstr "Опция не может быть добавлена."
 
-#: .\manage\property\views.py:517
+#: .\manage\property\views.py:514
 msgid "Options have been updated."
 msgstr "Опции обновлены."
 
-#: .\manage\property_groups\views.py:56
+#: .\manage\property_groups\views.py:53
 msgid "Property group has been saved."
 msgstr "Группа по свойствам сохранена."
 
-#: .\manage\property_groups\views.py:111
+#: .\manage\property_groups\views.py:108
 msgid "Property group has been added."
 msgstr "Группа по свойствам добавлена."
 
-#: .\manage\property_groups\views.py:133
+#: .\manage\property_groups\views.py:130
 msgid "Property group has been deleted."
 msgstr "Группа по свойствам удалена."
 
-#: .\manage\property_groups\views.py:149
+#: .\manage\property_groups\views.py:146
 msgid "Properties have been assigned."
 msgstr "Характеристики назначены."
 
-#: .\manage\property_groups\views.py:168
+#: .\manage\property_groups\views.py:165
 msgid "Properties have been removed."
 msgstr "Свойства убраны."
 
-#: .\manage\property_groups\views.py:171
+#: .\manage\property_groups\views.py:168
 msgid "There are no properties to update."
 msgstr "Нет свойств для обновления."
 
-#: .\manage\property_groups\views.py:176
+#: .\manage\property_groups\views.py:173
 msgid "Properties have been updated."
 msgstr "Свойства обновлены."
 
-#: .\manage\property_groups\views.py:347
-#, fuzzy
+#: .\manage\property_groups\views.py:344
 msgid "The Property groups have been sorted."
-msgstr "Группа по свойствам сохранена."
+msgstr "Группы свойств отсортированы."
 
-#: .\manage\seo\views.py:89
+#: .\manage\seo\views.py:86
 msgid "SEO data has been saved."
 msgstr "Данные SEO сохранены."
 
-#: .\manage\shipping_methods\views.py:191
+#: .\manage\shipping_methods\views.py:186
 msgid "Shipping method has been added."
 msgstr "Способ доставки добавлен."
 
-#: .\manage\shipping_methods\views.py:236
-#, fuzzy
+#: .\manage\shipping_methods\views.py:231
 msgid "Modifications have been saved."
 msgstr "Изменения приняты."
 
-#: .\manage\shipping_methods\views.py:258 .\manage\views\payment.py:274
+#: .\manage\shipping_methods\views.py:253 .\manage\views\payment.py:271
 msgid "Price has been added"
 msgstr "Цена добавлена."
 
-#: .\manage\shipping_methods\views.py:278 .\manage\views\payment.py:289
+#: .\manage\shipping_methods\views.py:273 .\manage\views\payment.py:286
 msgid "Prices have been deleted"
 msgstr "Цена удалена."
 
-#: .\manage\shipping_methods\views.py:290 .\manage\views\payment.py:300
+#: .\manage\shipping_methods\views.py:285 .\manage\views\payment.py:297
 msgid "Prices have been updated"
 msgstr "Цена обновлена."
 
-#: .\manage\shipping_methods\views.py:334
+#: .\manage\shipping_methods\views.py:329
 msgid "Shipping method has been saved."
 msgstr "Способ доставки сохранен."
 
-#: .\manage\shipping_methods\views.py:372
+#: .\manage\shipping_methods\views.py:367
 msgid "Shipping method has been deleted."
 msgstr "Способ доставки удален."
 
-#: .\manage\shipping_methods\views.py:393
-#, fuzzy
+#: .\manage\shipping_methods\views.py:388
 msgid "The shipping methods have been sorted."
-msgstr "Способ доставки сохранен."
+msgstr "Способы доставки отсортированы."
 
-#: .\manage\static_blocks\views.py:52
+#: .\manage\static_blocks\views.py:49
 msgid "Static block has been saved."
 msgstr "Статичный блок сохранен."
 
-#: .\manage\static_blocks\views.py:92
+#: .\manage\static_blocks\views.py:89
 msgid "Files has been deleted."
 msgstr "Файлы удалены."
 
-#: .\manage\static_blocks\views.py:102
+#: .\manage\static_blocks\views.py:99
 msgid "Files has been updated."
 msgstr "Файлы обновлены."
 
-#: .\manage\static_blocks\views.py:149
+#: .\manage\static_blocks\views.py:146
 msgid "Files has been added."
 msgstr "Файлы добавлены."
 
-#: .\manage\static_blocks\views.py:186
+#: .\manage\static_blocks\views.py:183
 msgid "Static block has been added."
 msgstr "Статичный блок добавлен."
 
-#: .\manage\static_blocks\views.py:226
+#: .\manage\static_blocks\views.py:223
 msgid "The static blocks have been sorted."
 msgstr "Статичный блок сохранен."
 
-#: .\manage\static_blocks\views.py:248
+#: .\manage\static_blocks\views.py:245
 msgid "Static block has been deleted."
 msgstr "Статичный блок удален."
 
@@ -1846,31 +1864,31 @@ msgstr "Фильтры корзины заданы"
 msgid "Cart filters has been reset"
 msgstr "Фильтры корзины сброшены"
 
-#: .\manage\views\customer.py:319
+#: .\manage\views\customer.py:316
 msgid "Customer filters have been set"
 msgstr "Фильтры клиента заданы"
 
-#: .\manage\views\customer.py:346
+#: .\manage\views\customer.py:343
 msgid "Customer filters has been reset"
 msgstr "Фильтры клиента сброшены"
 
-#: .\manage\views\export.py:335
+#: .\manage\views\export.py:332
 msgid "Export data has been saved."
 msgstr "Данные выгрузки сохранены."
 
-#: .\manage\views\lfs_portlets.py:68
+#: .\manage\views\lfs_portlets.py:65
 msgid "Portlet has been updated."
 msgstr "Портлет обновлен."
 
-#: .\manage\views\lfs_portlets.py:103
+#: .\manage\views\lfs_portlets.py:100
 msgid "Portlet has been added."
 msgstr "Портлет добавлен."
 
-#: .\manage\views\lfs_portlets.py:145
+#: .\manage\views\lfs_portlets.py:142
 msgid "Portlet has been deleted."
 msgstr "Портлет удален."
 
-#: .\manage\views\lfs_portlets.py:173
+#: .\manage\views\lfs_portlets.py:170
 msgid "Portlet has been saved."
 msgstr "Портлет сохранен."
 
@@ -1890,48 +1908,47 @@ msgstr "Заказ отправлен."
 msgid "State has been changed"
 msgstr "Состояние изменено."
 
-#: .\manage\views\payment.py:202
+#: .\manage\views\payment.py:199
 msgid "Payment method has been added."
 msgstr "Способ оплаты добавлен."
 
-#: .\manage\views\payment.py:344
+#: .\manage\views\payment.py:341
 msgid "Payment method has been saved."
 msgstr "Способ оплаты сохранен."
 
-#: .\manage\views\payment.py:382
+#: .\manage\views\payment.py:379
 msgid "Payment method has been deleted."
 msgstr "Способ оплаты удален."
 
-#: .\manage\views\payment.py:403
-#, fuzzy
+#: .\manage\views\payment.py:400
 msgid "The payment methods have been sorted."
-msgstr "Способ оплаты сохранен."
+msgstr "Способы оплаты отсортированы."
 
-#: .\manage\views\review.py:240
+#: .\manage\views\review.py:236
 msgid "Review filters have been set"
 msgstr "Фильтры мнений заданы"
 
-#: .\manage\views\review.py:270
+#: .\manage\views\review.py:266
 msgid "Review filters have been reset"
 msgstr "Фильтры мнений сброшены"
 
-#: .\manage\views\review.py:300
+#: .\manage\views\review.py:296
 msgid "Review has been deleted."
 msgstr "Мнение удалено."
 
-#: .\manage\views\review.py:320
+#: .\manage\views\review.py:316
 msgid "Review state has been set"
 msgstr "Состояние мнения задано"
 
-#: .\manage\views\shop.py:130
+#: .\manage\views\shop.py:127
 msgid "Shop data has been saved."
 msgstr "Данные магазина сохранены."
 
-#: .\manage\views\shop.py:153
+#: .\manage\views\shop.py:150
 msgid "Shop default values have been saved."
 msgstr "Стандартные значения магазина сохранены."
 
-#: .\manage\views\shop.py:179
+#: .\manage\views\shop.py:176
 msgid "Order numbers has been saved."
 msgstr "Настройки нумерации сохранены."
 
@@ -1951,15 +1968,15 @@ msgstr "Уровни категорий созданы."
 msgid "Effective prices have been set."
 msgstr "Действительные цены установлены."
 
-#: .\manage\views\marketing\featured.py:147
+#: .\manage\views\marketing\featured.py:146
 msgid "Featured product has been added."
 msgstr "Продвигаемые товары добавлены."
 
-#: .\manage\views\marketing\featured.py:176
+#: .\manage\views\marketing\featured.py:175
 msgid "Featured product has been removed."
 msgstr "Продвигаемые товары удалены"
 
-#: .\manage\views\marketing\featured.py:198
+#: .\manage\views\marketing\featured.py:197
 msgid "Featured product has been updated."
 msgstr "Продвигаемые товары обновлены."
 
@@ -1967,15 +1984,15 @@ msgstr "Продвигаемые товары обновлены."
 msgid "Please rate your products on "
 msgstr "Просим вас оценить купленные товары на "
 
-#: .\manage\views\marketing\topseller.py:147
+#: .\manage\views\marketing\topseller.py:146
 msgid "Topseller have been added."
 msgstr "Популярный товар добавлен."
 
-#: .\manage\views\marketing\topseller.py:176
+#: .\manage\views\marketing\topseller.py:175
 msgid "Topseller have been removed."
 msgstr "Популярный товар удален."
 
-#: .\manage\views\marketing\topseller.py:197
+#: .\manage\views\marketing\topseller.py:196
 msgid "Topseller have been updated."
 msgstr "Популярный товар обновлен."
 
@@ -2023,7 +2040,6 @@ msgid "Vouchers have been deleted."
 msgstr "Сертификаты удалены."
 
 #: .\manage\voucher\views.py:266
-#, fuzzy
 msgid "Voucher data has been saved."
 msgstr "Данные сертификатов сохранены."
 
@@ -2044,7 +2060,6 @@ msgstr[1] "%(count)d поставщика"
 msgstr[2] "%(count)d поставщиков"
 
 #: .\marketing\models.py:27
-#, fuzzy
 msgid "sales"
 msgstr "Распродажа"
 
@@ -2067,7 +2082,6 @@ msgid "lastname"
 msgstr "Фамилия"
 
 #: .\order\models.py:71
-#, fuzzy
 msgid "email"
 msgstr "E-Mail"
 
@@ -2157,9 +2171,8 @@ msgid "Product tax"
 msgstr "Налог на товар"
 
 #: .\order\models.py:227
-#, fuzzy
 msgid "Order item"
-msgstr "Время заказа"
+msgstr "Позиция"
 
 #: .\order\settings.py:15
 msgid "Submitted"
@@ -2237,12 +2250,10 @@ msgid "Plain"
 msgstr ""
 
 #: .\payment\settings.py:26
-#, fuzzy
 msgid "Bank"
-msgstr "Наименование банка"
+msgstr "Банк"
 
 #: .\payment\settings.py:27
-#, fuzzy
 msgid "Credit Card"
 msgstr "Кредитная карта"
 
@@ -2253,9 +2264,8 @@ msgstr "Продвигаемые товары"
 
 #: .\portlet\models\featured.py:25 .\portlet\models\forsale.py:28
 #: .\portlet\models\latest.py:25
-#, fuzzy
 msgid "Use current category"
-msgstr "Удалить категорию"
+msgstr "Использовать текущую категорию"
 
 #: .\portlet\models\featured.py:26 .\portlet\models\forsale.py:29
 #: .\portlet\models\latest.py:26
@@ -2516,6 +2526,10 @@ msgstr "Назначить уровни категорий"
 msgid "Reindex topseller"
 msgstr "Переиндексировать популярные"
 
+#: .\templates\manage\utils.html:29
+msgid "Update effective prices"
+msgstr "Обновить цены"
+
 #: .\templates\manage\actions\action.html:20
 #: .\templates\manage\actions\add_action.html:11
 msgid "Add action"
@@ -2612,18 +2626,16 @@ msgid "Save action"
 msgstr "Сохранить действие"
 
 #: .\templates\manage\actions\no_actions.html:12
-#, fuzzy
 msgid "There are no actions defined yet."
-msgstr "Нет категорий"
+msgstr "Действия отсутствуют"
 
 #: .\templates\manage\actions\no_actions.html:18
 msgid "Add Action"
 msgstr "Добавить действие"
 
 #: .\templates\manage\cart\cart.html:6
-#, fuzzy
 msgid "Manage Cart"
-msgstr "Управление остатками"
+msgstr "Управление корзинами"
 
 #: .\templates\manage\cart\cart.html:21
 #: .\templates\manage\customer\customer.html:19
@@ -3083,9 +3095,8 @@ msgid "Save data"
 msgstr "Сохранить данные"
 
 #: .\templates\manage\category\manage_category.html:6
-#, fuzzy
 msgid "Manage Category"
-msgstr "Категория"
+msgstr "Управление категориями"
 
 #: .\templates\manage\category\manage_category.html:18
 msgid "Add Top Category"
@@ -3130,9 +3141,8 @@ msgid "Portlets"
 msgstr "Портлеты"
 
 #: .\templates\manage\category\no_categories.html:4
-#, fuzzy
 msgid "No Categories"
-msgstr "Категории"
+msgstr "Категории отсутствуют"
 
 #: .\templates\manage\category\no_categories.html:14
 msgid "There are no categories yet."
@@ -3181,9 +3191,8 @@ msgid "Shipping address"
 msgstr "Адрес доставки"
 
 #: .\templates\manage\customer\customers.html:6
-#, fuzzy
 msgid "Manage customers"
-msgstr "Клиенты"
+msgstr "Управление клиентами"
 
 #: .\templates\manage\customer_tax\add_customer_tax.html:12
 msgid "Add customer tax"
@@ -3261,9 +3270,8 @@ msgid "Add delivery time"
 msgstr "Добавить срок поставки"
 
 #: .\templates\manage\delivery_times\base.html:5
-#, fuzzy
 msgid "Manage Delivery Time"
-msgstr "Сохранить срок поставки"
+msgstr "Управление сроками поставки"
 
 #: .\templates\manage\delivery_times\base.html:10
 msgid "Delivery times"
@@ -3300,7 +3308,7 @@ msgstr "Добавление скидки"
 
 #: .\templates\manage\discounts\data.html:13
 #: .\templates\manage\product\products_inline.html:122
-#: .\templates\manage\product\variants.html:222
+#: .\templates\manage\product\variants.html:226
 #: .\templates\manage\properties\property_select_field.html:13
 #: .\templates\manage\shipping_methods\shipping_method_data.html:13
 msgid "Save"
@@ -3371,15 +3379,13 @@ msgid "Save Export"
 msgstr "Сохранить"
 
 #: .\templates\manage\images\filebrowser_images.html:3
-#, fuzzy
 msgid "Select image"
-msgstr "Выбор поля"
+msgstr "Выбор картинки"
 
 #: .\templates\manage\images\filebrowser_images.html:10
 #: .\templates\manage\images\images.html:34
-#, fuzzy
 msgid "Filter"
-msgstr "Фильтруемое"
+msgstr "Фильтр"
 
 #: .\templates\manage\images\filebrowser_images.html:40
 msgid "There are no images yet"
@@ -3588,9 +3594,8 @@ msgid "Change"
 msgstr "Изменить"
 
 #: .\templates\manage\order\order_inline.html:12
-#, fuzzy
 msgid "Order number"
-msgstr "Время заказа"
+msgstr "Номер заказа"
 
 #: .\templates\manage\order\order_inline.html:66
 msgid "Shipping method"
@@ -3680,9 +3685,8 @@ msgid "Add payment method"
 msgstr "Добавить способ оплаты"
 
 #: .\templates\manage\payment\manage_payment.html:4
-#, fuzzy
 msgid "Manage Payment Methods"
-msgstr "Способы оплаты"
+msgstr "Управление способами оплаты"
 
 #: .\templates\manage\payment\manage_payment.html:21
 msgid "Do you really want to delete this payment method?"
@@ -3768,7 +3772,6 @@ msgstr ""
 #: .\templates\manage\portlets\portlets_inline.html:67
 #: .\templates\manage\product\attachments.html:56
 #: .\templates\manage\product\images.html:76
-#, fuzzy
 msgid "Move Down"
 msgstr "Вниз"
 
@@ -3778,7 +3781,7 @@ msgstr "Вы действительно хотите удалить портле
 
 #: .\templates\manage\portlets\portlets_inline.html:75
 #: .\templates\manage\product\products_inline.html:127
-#: .\templates\manage\product\variants.html:221
+#: .\templates\manage\product\variants.html:225
 #: .\templates\manage\properties\options_inline.html:71
 #: .\templates\manage\properties\step_inline.html:70
 #: .\templates\manage\static_block\files.html:44
@@ -3892,9 +3895,8 @@ msgid "There are no images"
 msgstr "Вы еще не добавили ни одной картинки."
 
 #: .\templates\manage\product\no_products.html:4
-#, fuzzy
 msgid "No Products"
-msgstr "Товары"
+msgstr "Товары отсутствуют"
 
 #: .\templates\manage\product\no_products.html:14
 msgid "There are no products yet."
@@ -3955,7 +3957,7 @@ msgid "For Sale"
 msgstr "Распродажа"
 
 #: .\templates\manage\product\products_inline.html:111
-#: .\templates\manage\product\variants.html:27
+#: .\templates\manage\product\variants.html:28
 msgid "Edit"
 msgstr "Правка"
 
@@ -3972,44 +3974,44 @@ msgstr "Товары не найдены."
 msgid "There are no property groups yet."
 msgstr "Вы еще не добавили групп по свойствам."
 
-#: .\templates\manage\product\properties.html:24
-#: .\templates\manage\product\variants.html:20
+#: .\templates\manage\product\properties.html:25
+#: .\templates\manage\product\variants.html:21
 msgid "Update property groups"
 msgstr "Обновить группы свойств"
 
-#: .\templates\manage\product\properties.html:33
+#: .\templates\manage\product\properties.html:34
 msgid "Default values"
 msgstr "Стандартные значения"
 
-#: .\templates\manage\product\properties.html:82
+#: .\templates\manage\product\properties.html:83
 msgid "Update default values"
 msgstr "Обновить стандартные значения"
 
-#: .\templates\manage\product\properties.html:91
+#: .\templates\manage\product\properties.html:92
 msgid "Filter values"
 msgstr "Значения фильтра"
 
-#: .\templates\manage\product\properties.html:140
+#: .\templates\manage\product\properties.html:141
 msgid "Update filter values"
 msgstr "Обновить значения фильтра"
 
-#: .\templates\manage\product\properties.html:149
+#: .\templates\manage\product\properties.html:150
 msgid "Displayed values"
 msgstr "Отображаемые значения"
 
-#: .\templates\manage\product\properties.html:196
+#: .\templates\manage\product\properties.html:197
 msgid "Update displayed values"
 msgstr "Обновить отображаемые значения"
 
-#: .\templates\manage\product\properties.html:204
+#: .\templates\manage\product\properties.html:205
 msgid "Variant properties"
 msgstr "Свойства варианта"
 
-#: .\templates\manage\product\properties.html:211
+#: .\templates\manage\product\properties.html:212
 msgid "Property values"
 msgstr "Значения свойств"
 
-#: .\templates\manage\product\properties.html:212
+#: .\templates\manage\product\properties.html:213
 msgid "Please go to the variants to assign property values."
 msgstr "Задать значения свойств можно на вкладке \"Варианты\""
 
@@ -4051,73 +4053,73 @@ msgstr "Упаковка"
 msgid "Save stock"
 msgstr "Сохранить наличие"
 
-#: .\templates\manage\product\variants.html:24
+#: .\templates\manage\product\variants.html:25
 msgid "Local properties"
 msgstr "Локальные свойства"
 
-#: .\templates\manage\product\variants.html:28
-#: .\templates\manage\product\variants.html:214
+#: .\templates\manage\product\variants.html:29
+#: .\templates\manage\product\variants.html:218
 msgid "Edit variant"
 msgstr "Править вариант"
 
-#: .\templates\manage\product\variants.html:38
+#: .\templates\manage\product\variants.html:39
 msgid "Add property"
 msgstr "Добавить свойство"
 
-#: .\templates\manage\product\variants.html:47
 #: .\templates\manage\product\variants.html:48
+#: .\templates\manage\product\variants.html:49
 msgid "Up"
 msgstr "Вверх"
 
-#: .\templates\manage\product\variants.html:56
 #: .\templates\manage\product\variants.html:57
+#: .\templates\manage\product\variants.html:58
 msgid "Down"
 msgstr "Вниз"
 
-#: .\templates\manage\product\variants.html:63
+#: .\templates\manage\product\variants.html:64
 msgid "Do you really want to delete this property and all its options?"
 msgstr "Вы действительно хотите удалить свойство?"
 
-#: .\templates\manage\product\variants.html:67
+#: .\templates\manage\product\variants.html:68
 msgid "Delete property"
 msgstr "Удалить свойство"
 
-#: .\templates\manage\product\variants.html:76
+#: .\templates\manage\product\variants.html:77
 #: .\templates\manage\properties\options_inline.html:68
 msgid "Do you really want to delete this option?"
 msgstr "Вы действительно хотите удалить опцию?"
 
-#: .\templates\manage\product\variants.html:80
+#: .\templates\manage\product\variants.html:81
 #: .\templates\manage\properties\options_inline.html:72
 msgid "Delete option"
 msgstr "Удалить опцию"
 
-#: .\templates\manage\product\variants.html:92
+#: .\templates\manage\product\variants.html:93
 #: .\templates\manage\properties\options_inline.html:38
 msgid "Add option"
 msgstr "Добавить опцию"
 
-#: .\templates\manage\product\variants.html:117
+#: .\templates\manage\product\variants.html:121
 msgid "Add variant(s)"
 msgstr "Добавить вариант(ы)"
 
-#: .\templates\manage\product\variants.html:133
+#: .\templates\manage\product\variants.html:137
 msgid "Pos."
 msgstr "Поз."
 
-#: .\templates\manage\product\variants.html:140
+#: .\templates\manage\product\variants.html:144
 msgid "URL"
 msgstr "URL"
 
-#: .\templates\manage\product\variants.html:237
+#: .\templates\manage\product\variants.html:241
 msgid "Change category variant"
 msgstr "Изменить вариант для категории"
 
-#: .\templates\manage\product\variants.html:242
+#: .\templates\manage\product\variants.html:246
 msgid "Display type"
 msgstr "Тип отображения"
 
-#: .\templates\manage\product\variants.html:253
+#: .\templates\manage\product\variants.html:257
 msgid "Change variant display type"
 msgstr "Изменить тип отображения варианта"
 
@@ -4133,9 +4135,8 @@ msgid "Add Tax"
 msgstr "Добавить налог"
 
 #: .\templates\manage\product_taxes\no_taxes.html:4
-#, fuzzy
 msgid "No Product Taxes"
-msgstr "Налог на товар"
+msgstr "Налоги на товар отсутствуют"
 
 #: .\templates\manage\product_taxes\no_taxes.html:14
 msgid "There are no product taxes yet."
@@ -4334,9 +4335,8 @@ msgid "Add Shipping Method"
 msgstr "Добавление способа доставки"
 
 #: .\templates\manage\shipping_methods\manage_shipping.html:4
-#, fuzzy
 msgid "Manage Shipping Methods"
-msgstr "Способы доставки"
+msgstr "Управление способами доставки"
 
 #: .\templates\manage\shipping_methods\manage_shipping.html:21
 msgid "Do you really want to delete this shipping method?"
@@ -4347,16 +4347,14 @@ msgid "Delete Shipping Method"
 msgstr "Удалить способ доставки"
 
 #: .\templates\manage\shipping_methods\no_shipping_methods.html:4
-#, fuzzy
 msgid "No Shipping Methods"
-msgstr "Способы доставки"
+msgstr "Способы доставки отсутствуют"
 
 #: .\templates\manage\shipping_methods\no_shipping_methods.html:14
 msgid "There are no shipping methods yet."
 msgstr "Методы доставки отсутствуют"
 
 #: .\templates\manage\shop\data_tab.html:43
-#, fuzzy
 msgid "E-Mails"
 msgstr "E-Mail"
 
@@ -4365,9 +4363,8 @@ msgid "Google"
 msgstr ""
 
 #: .\templates\manage\shop\data_tab.html:116
-#, fuzzy
 msgid "Checkout"
-msgstr "Тип расчета"
+msgstr "Оформление заказа"
 
 #: .\templates\manage\shop\data_tab.html:143
 msgid "Content"
@@ -4520,6 +4517,9 @@ msgstr "Сертификат не действителен при данной �
 #: .\voucher\settings.py:18
 msgid "The voucher doesn't exist."
 msgstr "Сертификат не существует."
+
+#~ msgid "Display no results"
+#~ msgstr "Отображать без результатов"
 
 #~ msgid "Modifications have been changed."
 #~ msgstr "Изменения приняты."

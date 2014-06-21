@@ -1,10 +1,7 @@
 # python imports
-from datetime import datetime
-from datetime import timedelta
 import json
 
 # django imports
-
 from django.contrib.auth.models import User
 from django.db.models import Q
 from django.contrib.auth.decorators import permission_required

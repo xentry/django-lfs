@@ -1,8 +1,4 @@
-# python imports
-import json
-
 # django imports
-from copy import deepcopy
 from django.conf import settings
 from django.contrib.auth.decorators import permission_required
 from django.core.cache import cache
@@ -168,7 +164,7 @@ def manage_variants(request, product_id, as_string=False, variant_simple_form=No
     """
     product = Product.objects.get(pk=product_id)
 
-    all_properties = product.get_property_select_fields()
+    all_properties = product.get_variants_properties()
 
     property_form = PropertyForm()
     property_option_form = PropertyOptionForm()
@@ -188,7 +184,7 @@ def manage_variants(request, product_id, as_string=False, variant_simple_form=No
     if variants is None:
         variants = []
 
-        props = product.get_property_select_fields()
+        props = product.get_variants_properties()
         props_options = {}
         for o in PropertyOption.objects.filter(property__in=props):
             props_options.setdefault(o.property_id, {})
@@ -383,7 +379,7 @@ def add_property_option(request, product_id):
         position = 999
         property_id = request.POST.get("property_id")
         for name in names:
-            property_option = property_option_form.save(commit=False)
+            property_option = PropertyOption(name=name)
             property_option.property_id = property_id
             property_option.position = position
             property_option.save()
@@ -446,7 +442,7 @@ def add_variants(request, product_id):
     cache.delete("%s-variants%s" % (settings.CACHE_MIDDLEWARE_KEY_PREFIX, product_id))
 
     product = Product.objects.get(pk=product_id)
-    all_properties = product.get_property_select_fields()
+    all_properties = product.get_variants_properties()
 
     variant_simple_form = ProductVariantSimpleForm(all_properties=all_properties, data=request.POST)
 
